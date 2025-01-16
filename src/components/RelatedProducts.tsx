@@ -1,39 +1,39 @@
 const relatedProducts = [
   {
     id: 1,
-    name: "Cashmere V-Neck Sweater",
-    price: "$295",
-    image: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=2005"
+    name: "CuddleBox - Set Lapin & Éléphant",
+    price: "€63,95",
+    image: "/lovable-uploads/330d4165-3fd2-4878-a634-c9dcd0c5ed6d.png"
   },
   {
     id: 2,
-    name: "Wool Cardigan",
-    price: "$225",
-    image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964"
+    name: "CuddleBox - Set Panda & Renard",
+    price: "€63,95",
+    image: "/lovable-uploads/33e01e74-e353-4510-ba2f-4bc2955b24b3.png"
   },
   {
     id: 3,
-    name: "Turtleneck Sweater",
-    price: "$185",
-    image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=2071"
+    name: "CuddleBox - Set Ours & Lapin",
+    price: "€63,95",
+    image: "/lovable-uploads/f6abc95e-3993-4cdb-a73c-757afc4280b0.png"
   },
   {
     id: 4,
-    name: "Cable Knit Sweater",
-    price: "$215",
-    image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=2072"
+    name: "CuddleBox - Set Classique",
+    price: "€63,95",
+    image: "/lovable-uploads/a37cd59e-cdbf-4e9f-aa2a-50aa3dca8f1a.png"
   }
 ];
 
 export const RelatedProducts = () => {
   return (
     <section className="mt-16 pt-16 border-t animate-fade-in">
-      <h2 className="text-2xl font-medium mb-8">You May Also Like</h2>
+      <h2 className="text-2xl font-medium mb-8">Vous aimerez aussi</h2>
       
       <div className="related-products">
         {relatedProducts.map((product) => (
           <div key={product.id} className="group cursor-pointer">
-            <div className="aspect-square rounded-lg bg-secondary overflow-hidden mb-4">
+            <div className="aspect-square rounded-lg bg-[#FDF8F6] overflow-hidden mb-4">
               <img
                 src={product.image}
                 alt={product.name}

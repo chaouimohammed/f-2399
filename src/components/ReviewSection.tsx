@@ -3,24 +3,24 @@ import { Star } from "lucide-react";
 const reviews = [
   {
     id: 1,
-    author: "Sarah M.",
+    author: "Marie L.",
     rating: 5,
-    content: "Exceptional quality and perfect fit. The merino wool is incredibly soft and comfortable.",
-    date: "2 weeks ago"
+    content: "Magnifique coffret cadeau ! La qualité des matériaux est exceptionnelle et le packaging est superbe. Mon amie a adoré ce cadeau pour sa baby shower.",
+    date: "2 semaines"
   },
   {
     id: 2,
-    author: "Michael R.",
-    rating: 4,
-    content: "Great sweater for both casual and formal occasions. Slightly pricey but worth the investment.",
-    date: "1 month ago"
+    author: "Thomas R.",
+    rating: 5,
+    content: "Produits de très grande qualité, parfait pour un cadeau de naissance. Les jouets en bois sont magnifiques et les peluches très douces.",
+    date: "1 mois"
   }
 ];
 
 export const ReviewSection = () => {
   return (
     <section className="mt-16 pt-16 border-t animate-fade-in">
-      <h2 className="text-2xl font-medium mb-8">Customer Reviews</h2>
+      <h2 className="text-2xl font-medium mb-8">Avis Clients</h2>
       
       <div className="flex items-center mb-8">
         <div className="flex items-center">
@@ -32,7 +32,7 @@ export const ReviewSection = () => {
           ))}
         </div>
         <span className="ml-2 text-sm text-muted-foreground">
-          Based on 128 reviews
+          Basé sur 128 avis
         </span>
       </div>
 
@@ -40,7 +40,7 @@ export const ReviewSection = () => {
         {reviews.map((review) => (
           <div
             key={review.id}
-            className="p-6 rounded-lg bg-secondary/50 space-y-4"
+            className="p-6 rounded-lg bg-[#FDF8F6] space-y-4"
           >
             <div className="flex justify-between items-start">
               <div>
@@ -54,7 +54,7 @@ export const ReviewSection = () => {
                   ))}
                 </div>
               </div>
-              <span className="text-sm text-muted-foreground">{review.date}</span>
+              <span className="text-sm text-muted-foreground">Il y a {review.date}</span>
             </div>
             <p className="text-sm leading-relaxed">{review.content}</p>
           </div>
